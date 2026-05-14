@@ -1,7 +1,8 @@
 .dashboard {
   display: flex;
   flex-direction: column;
-  gap: calc(var(--spacing-density) * 1.5);
+  gap: 2rem;
+  padding-bottom: 2rem;
 }
 
 .banner {
@@ -140,8 +141,8 @@
 
 .gridSection {
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: calc(var(--spacing-density) * 1.5);
+  grid-template-columns: 32% 1fr;
+  gap: 2rem;
 }
 
 .kpiColumn {
@@ -207,7 +208,7 @@
 .rightColumn {
   display: flex;
   flex-direction: column;
-  gap: calc(var(--spacing-density) * 1.5);
+  gap: 2rem;
 }
 
 .tableContainer {
