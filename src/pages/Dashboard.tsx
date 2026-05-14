@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Dashboard.module.css';
-import { Target, ArrowUpRight, Filter, Plus, ArrowDownToLine, Calendar as CalendarIcon, Activity, DollarSign, Users } from 'lucide-react';
+import { ArrowUpRight, Filter, Plus, ArrowDownToLine } from 'lucide-react';
 
 export const Dashboard: React.FC = () => {
   return (
