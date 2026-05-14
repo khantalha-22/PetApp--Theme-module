@@ -1,0 +1,183 @@
+.previewDashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-family: var(--font-family);
+  background-color: hsl(var(--bg-main));
+  min-height: 100%;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.statCard {
+  background: hsl(var(--bg-card));
+  border: 1px solid hsl(var(--border));
+  border-radius: var(--radius);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.02);
+}
+
+.statLabel {
+  font-size: 0.8rem;
+  color: hsl(var(--text-secondary));
+  font-weight: 500;
+}
+
+.statValue {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: hsl(var(--text-primary));
+  margin-top: 0.25rem;
+}
+
+.iconWrapper {
+  background: hsl(var(--accent));
+  color: hsl(var(--primary));
+  padding: 0.5rem;
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calendarSection {
+  background: hsl(var(--bg-card));
+  border: 1px solid hsl(var(--border));
+  border-radius: var(--radius);
+  padding: 1.25rem;
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.sectionHeader h3 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: hsl(var(--text-primary));
+  margin: 0;
+}
+
+.newBtn {
+  background: hsl(var(--primary));
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: calc(var(--radius) - 2px);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.timeSlot {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.timeLabel {
+  width: 40px;
+  font-size: 0.75rem;
+  color: hsl(var(--text-secondary));
+  padding-top: 0.5rem;
+  text-align: right;
+}
+
+.eventCard {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius);
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.eventCard strong {
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.eventCard span {
+  font-size: 0.75rem;
+  opacity: 0.9;
+}
+
+.emptySlot {
+  flex: 1;
+  height: 2.5rem;
+  border: 1px dashed hsl(var(--border));
+  border-radius: var(--radius);
+  margin-top: 0.25rem;
+}
+
+.recentSection {
+  background: hsl(var(--bg-card));
+  border: 1px solid hsl(var(--border));
+  border-radius: var(--radius);
+  padding: 1.25rem;
+}
+
+.badge {
+  background: hsl(var(--primary));
+  color: white;
+  padding: 0.2rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+.recentGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.recentCard {
+  border: 1px solid hsl(var(--border));
+  border-radius: var(--radius);
+  padding: 0.75rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.recentCard div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.recentCard strong {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: hsl(var(--text-primary));
+}
+
+.recentCard span {
+  font-size: 0.75rem;
+  color: hsl(var(--text-secondary));
+}
+
+.viewBtn {
+  border: 1px solid hsl(var(--border));
+  color: hsl(var(--text-primary));
+  background: hsl(var(--bg-main));
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius);
+  font-size: 0.75rem;
+  font-weight: 500;
+}

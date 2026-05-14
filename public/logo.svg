@@ -1,0 +1,6 @@
+<svg xmlns="http://www.0w0.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <circle cx="100" cy="100" r="95" fill="#f0fdf4" stroke="#86efac" stroke-width="4"/>
+  <path d="M50 150 Q100 50 150 150 Z" fill="#3b82f6" />
+  <circle cx="100" cy="100" r="30" fill="#fcd34d" />
+  <text x="100" y="110" font-family="sans-serif" font-weight="bold" font-size="24" text-anchor="middle" fill="#1e3a8a">PetApp</text>
+</svg>

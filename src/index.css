@@ -1,0 +1,67 @@
+:root {
+  /* Colors */
+  --primary: 174 72% 32%; /* #178a7b Vet Teal */
+  --accent: 174 72% 92%; /* lighter teal */
+  
+  --bg-main: 0 0% 98%;
+  --bg-sidebar: 218 40% 25%; /* #263b5e */
+  --bg-card: 0 0% 100%;
+  
+  --text-primary: 220 30% 15%;
+  --text-secondary: 220 15% 40%;
+  --text-sidebar: 0 0% 100%;
+  
+  --border: 220 15% 90%;
+  
+  --success: 142 71% 45%;
+  --warning: 38 92% 50%;
+  --danger: 348 83% 47%;
+  
+  /* Typography */
+  --font-family: 'Manrope', system-ui, sans-serif;
+  
+  /* Layout */
+  --radius: 8px;
+  --spacing-density: 1rem;
+}
+
+[data-theme='dark'] {
+  --bg-main: 220 30% 10%;
+  --bg-card: 220 30% 15%;
+  --bg-sidebar: 220 40% 8%;
+  
+  --text-primary: 0 0% 98%;
+  --text-secondary: 220 15% 70%;
+  
+  --border: 220 30% 25%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: hsl(var(--bg-main));
+  color: hsl(var(--text-primary));
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#root {
+  display: flex;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}

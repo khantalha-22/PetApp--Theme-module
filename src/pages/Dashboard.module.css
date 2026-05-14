@@ -1,0 +1,307 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--spacing-density) * 1.5);
+}
+
+.banner {
+  background-color: hsl(var(--bg-card));
+  padding: 1rem;
+  border-radius: var(--radius);
+  border: 1px solid hsl(var(--border));
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.appointmentsCard, .invoicesCard, .tasksCard {
+  background-color: hsl(var(--bg-card));
+  border-radius: var(--radius);
+  border: 1px solid hsl(var(--border));
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  overflow: hidden;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background-color: hsl(var(--bg-sidebar));
+  color: white;
+}
+
+.cardHeader h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.viewAllBtn {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: white;
+}
+
+.viewAllBtnText {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: rgba(255,255,255,0.7);
+}
+
+.appointmentList {
+  display: flex;
+  flex-direction: column;
+}
+
+.appointmentItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid hsl(var(--border));
+}
+
+.appointmentItem:last-child {
+  border-bottom: none;
+}
+
+.appInfo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex: 2;
+}
+
+.petAvatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.petDetails {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.petName {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.meta {
+  font-size: 0.75rem;
+  color: hsl(var(--text-secondary));
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.meta::before {
+  content: attr(data-label);
+  text-transform: uppercase;
+  font-weight: 600;
+  color: hsl(var(--text-secondary));
+  opacity: 0.7;
+}
+
+.appStatus {
+  flex: 1;
+}
+
+.statusSelect {
+  padding: 0.5rem;
+  border-radius: var(--radius);
+  border: 1px solid hsl(var(--border));
+  background-color: hsl(var(--bg-main));
+  color: hsl(var(--text-primary));
+  font-size: 0.85rem;
+}
+
+.appTime, .appType {
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.85rem;
+}
+
+.appTime span, .appType span {
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: hsl(var(--primary));
+  text-transform: uppercase;
+}
+
+.gridSection {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: calc(var(--spacing-density) * 1.5);
+}
+
+.kpiColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  background-color: hsl(var(--bg-card));
+  border-radius: var(--radius);
+  border: 1px solid hsl(var(--border));
+  overflow: hidden;
+}
+
+.kpiCards {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.kpiCard {
+  background-color: hsl(var(--bg-sidebar));
+  color: white;
+  padding: 1rem;
+  border-radius: var(--radius);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  overflow: hidden;
+}
+
+.kpiCard::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background-color: hsl(var(--primary));
+}
+
+.kpiLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.kpiTitle {
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.8);
+}
+
+.kpiValue {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.kpiSub {
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.8);
+}
+
+.rightColumn {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--spacing-density) * 1.5);
+}
+
+.tableContainer {
+  padding: 0 1.5rem;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th {
+  text-align: left;
+  padding: 1rem 0;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: hsl(var(--text-primary));
+  border-bottom: 1px solid hsl(var(--border));
+}
+
+.table td {
+  padding: 1rem 0;
+  font-size: 0.85rem;
+  border-bottom: 1px solid hsl(var(--border));
+}
+
+.table tr:last-child td {
+  border-bottom: none;
+}
+
+.taskContent {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.taskGroupHeader {
+  background-color: hsl(var(--bg-main));
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.taskItem {
+  border: 1px solid hsl(var(--border));
+  border-radius: var(--radius);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.taskDate {
+  font-size: 0.75rem;
+  color: hsl(var(--text-secondary));
+}
+
+.taskTitle {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.taskMeta {
+  display: flex;
+  align-items: flex-end;
+  gap: 1.5rem;
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid hsl(var(--border));
+}
+
+.taskMeta span {
+  display: block;
+  font-size: 0.7rem;
+  color: hsl(var(--text-secondary));
+  margin-bottom: 0.25rem;
+}
+
+.taskSelect {
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--radius);
+  border: 1px solid hsl(var(--border));
+  background-color: hsl(var(--bg-main));
+  color: hsl(var(--text-primary));
+  font-size: 0.8rem;
+}
+
+.actionBtn {
+  background-color: hsl(var(--bg-sidebar));
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius);
+  font-size: 0.8rem;
+  font-weight: 500;
+}
